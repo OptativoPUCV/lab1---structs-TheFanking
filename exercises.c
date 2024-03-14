@@ -19,6 +19,7 @@ int findMax(int arr[], int size)
         mayor = arr[i];
       }
     }
+  printf("%i",mayor);
   
   return 0; 
 }
