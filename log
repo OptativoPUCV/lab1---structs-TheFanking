@@ -53,3 +53,14 @@ exercises.c:33:7: error: variable ‘temporal’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 da0d291
+Thu 14 Mar 2024 08:46:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:7: error: variable ‘temporal’ set but not used [-Werror=unused-but-set-variable]
+   33 |   int temporal = 0;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fe69889
