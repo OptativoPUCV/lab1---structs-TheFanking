@@ -42,3 +42,14 @@ Thu 14 Mar 2024 08:40:02 PM UTC:
  tests:  0|6
 total_score: 10/70
 290fa70
+Thu 14 Mar 2024 08:46:09 PM UTC: 
+ exercises.c | 17 ++++++++++++-----
+ 1 file changed, 12 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:7: error: variable ‘temporal’ set but not used [-Werror=unused-but-set-variable]
+   33 |   int temporal;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+da0d291
