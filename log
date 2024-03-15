@@ -255,3 +255,8 @@ exercises.c:83:41: error: expected ‘;’ before ‘contador’
       |             ~~~~~~~~                     
 Compilation failed
 f30b179
+Fri 15 Mar 2024 11:12:36 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+084f5b3
