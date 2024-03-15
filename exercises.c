@@ -50,17 +50,6 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
   int (*arr2) = NULL; 
-  for (int i = 0; i < size; i++)
-    {
-      if (arr[i] % 2 == 0)
-      {
-        arr2 = realloc(arr2, sizeof(int) * (*newSize));
-        arr2[*newSize] = arr[i];
-        (*newSize)++;
-      }
-      arr2[*newSize - 1] = arr[i];
-    }
-  
   return arr2; 
 }
 
@@ -73,7 +62,28 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-   
+  result = realloc(result,sizeof(int) * (size1 + size2));
+  if (result == NULL)
+   {
+    exit(EXIT_FAILURE);
+   }
+  for (int i = 0  ; i < size1 ; i++)
+    {
+      for (int j = 0 ; j < size2 ; j++)
+        {
+          for (int k = 0 ;  k < size1 + size2 ; k++)
+            {
+              if (arr1[i] < arr2[j])
+              {
+                result[k] = arr1[+1];
+              }
+              else
+              {
+                result[k] = arr2[+1];
+              }
+            }
+        }
+    }
   
 }
 
