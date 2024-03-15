@@ -185,3 +185,17 @@ exercises.c:57:9: note: ...this statement, but the latter is misleadingly indent
 cc1: all warnings being treated as errors
 Compilation failed
 b55fae1
+Fri 15 Mar 2024 09:15:13 PM UTC: 
+ exercises.c | 4 ----
+ 1 file changed, 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   55 |       if (arr[i] % 2 == 0)
+      |       ^~
+exercises.c:57:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   57 |         (*newSize)++;
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+9d4af30

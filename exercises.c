@@ -54,10 +54,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     {
       if (arr[i] % 2 == 0)
         arr2 = (int * ) realloc(arr2, sizeof(int) * (*newSize + 1));
-        if (arr2 == NULL)
-        {
-          printf("No existe");
-        }
         (*newSize)++;
     }
   
