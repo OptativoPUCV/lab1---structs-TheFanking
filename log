@@ -135,3 +135,9 @@ exercises.c:61:7: error: expected ‘(’ before ‘}’ token
       |       (
 Compilation failed
 ef7a5bd
+Fri 15 Mar 2024 09:03:13 PM UTC: 
+ exercises.c | 11 -----------
+ 1 file changed, 11 deletions(-)
+ tests:  0|4
+total_score: 30/70
+78c92d0
