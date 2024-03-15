@@ -63,6 +63,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
   result = realloc(result,sizeof(int) * (size1 + size2));
+  int valor = size1 + size2;
   if (result == NULL)
    {
     exit(EXIT_FAILURE);
@@ -71,7 +72,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     {
       for (int j = 0 ; j < size2 ; j++)
         {
-          for (int k = 0 ;  k < size1 + size2 ; k++)
+          for (int k = 0 ;  k < valor ; k++)
             {
               if (arr1[i] < arr2[j])
               {
@@ -84,7 +85,6 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
             }
         }
     }
-  
 }
 
 /*
