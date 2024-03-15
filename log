@@ -94,3 +94,27 @@ Fri 15 Mar 2024 07:54:51 PM UTC:
  tests:  0|4
 total_score: 30/70
 4a75b4d
+Fri 15 Mar 2024 08:00:47 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:7: error: ‘result’ redeclared as different kind of symbol
+   65 |   int result[] = NULL;
+      |       ^~~~~~
+exercises.c:63:28: note: previous definition of ‘result’ with type ‘int *’
+   63 |                        int result[])
+      |                        ~~~~^~~~~~~~
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/string.h:33,
+                 from exercises.c:5,
+                 from test.c:1:
+exercises.c:65:18: error: invalid initializer
+   65 |   int result[] = NULL;
+      |                  ^~~~
+In file included from test.c:1:
+exercises.c:65:7: error: variable ‘result’ set but not used [-Werror=unused-but-set-variable]
+   65 |   int result[] = NULL;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4a433d1
