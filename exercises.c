@@ -48,7 +48,19 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
-{ 
+{
+  int *newArreglo = NULL;
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] % 2 == 0)
+      {
+       newArreglo =  (int *) realloc(newArreglo, (*newSize + 1) * 
+       sizeof(int));
+        if 
+        
+      }
+
+    }
   
   return NULL; 
 }
@@ -62,21 +74,8 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-   for (int i = 0; i < size1; i++)
-     {
-       for(int j = 0; j < size2; j++)
-         {
-           
-           if (arr1[i] < arr2[j])
-           {
-             result[i] = arr1[i];
-           }
-           else if (arr1[i] > arr2[j])
-           {
-             result[i] = arr2[j];
-           }
-         }
-     }
+   
+  
 }
 
 /*
@@ -85,7 +84,23 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) 
+{ 
+  for (int i = 0; i < size - 1; i++)
+    {
+      if (arr[i] < arr[i + 1])
+      {
+        return 1;
+      }
+      else if (arr[i] > arr[i + 1])
+      {
+        return 0;
+      }
+    }
+  
+  
+  return 0; 
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca

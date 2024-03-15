@@ -124,3 +124,14 @@ Fri 15 Mar 2024 08:01:11 PM UTC:
  tests:  0|4
 total_score: 30/70
 6b07b07
+Fri 15 Mar 2024 09:02:43 PM UTC: 
+ exercises.c | 45 ++++++++++++++++++++++++++++++---------------
+ 1 file changed, 30 insertions(+), 15 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:61:7: error: expected ‘(’ before ‘}’ token
+   61 |       }
+      |       ^
+      |       (
+Compilation failed
+ef7a5bd
