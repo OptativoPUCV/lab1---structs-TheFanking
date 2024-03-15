@@ -236,3 +236,22 @@ Fri 15 Mar 2024 10:40:38 PM UTC:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 c95041c
+Fri 15 Mar 2024 11:12:11 PM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:41: error: expected ‘;’ before ‘contador’
+   78 |             result[contador] = arr1[i++]
+      |                                         ^
+      |                                         ;
+   79 |             contador++;
+      |             ~~~~~~~~                     
+exercises.c:83:41: error: expected ‘;’ before ‘contador’
+   83 |             result[contador] = arr2[j++]
+      |                                         ^
+      |                                         ;
+   84 |             contador++;
+      |             ~~~~~~~~                     
+Compilation failed
+f30b179

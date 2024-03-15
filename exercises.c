@@ -62,29 +62,30 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-  result = realloc(result,sizeof(int) * (size1 + size2));
-  int valor = size1 + size2;
+  int newSize = size1 + size2;
+  int contador = 0;
+  result = realloc(result,sizeof(int) * (newSize));
   if (result == NULL)
    {
     exit(EXIT_FAILURE);
    }
-  for (int i = 0  ; i < size1 ; i++)
+  for (int i = 0 ; i < size1 ; i++)
     {
-      for (int j = 0 ; j < size2 ; j++)
+      for (int j = 0 ;  j < size2 ; j++)
         {
-          for (int k = 0 ;  k < valor ; k++)
-            {
-              if (arr1[i] < arr2[j])
-              {
-                result[k] = arr1[i++];
-              }
-              else
-              {
-                result[k] = arr2[j++];
-              }
-            }
+          if (arr1[i] < arr2[j])
+          {
+            result[contador] = arr1[i++]
+            contador++;  
+          }
+          else
+          {
+            result[contador] = arr2[j++]
+            contador++;
+          }
         }
     }
+  
 }
 
 /*
