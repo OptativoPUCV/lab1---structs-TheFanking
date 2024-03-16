@@ -95,12 +95,12 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       {
         result[contador] = arr1[i];
         i++;
-        break;
       }
       else
       {
         result[contador] = arr2[j]; 
         j++;
+        break;
       }
       contador++;  
     }
