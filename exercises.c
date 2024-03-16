@@ -65,33 +65,21 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   int newSize = size1 + size2;
   int contador = 0;
   result = malloc(newSize * sizeof(int));
-  int i = 0 ;
-  int j = 0;
-  while (i < size1 && j < size2)
+  for(int i = 0; i < size1; i++)
     {
-      if (arr1[i] < arr2[j])
-      {
-        result[contador] = arr1[i];
-        i++;
-      }
-      else
-      {
-        result[contador] = arr2[j];
-        j++;
-      }
-      contador++;
-    }
-  while (i < size1)
-    {
-      result[contador] = arr1[i];
-      i++;
-      contador++;
-    }
-  while (j < size2)
-    {
-      result[contador] = arr2[j];
-      j++;
-      contador++;
+      for (int j = 0 ; j < size2; j++)
+        {
+          if (arr1[i] < arr2[j])
+          {
+            result[contador] = arr1[i];
+            contador++;
+          }
+          else if (arr1[i] > arr2[j])
+          {
+            result[contador] = arr2[j];
+            contador++;
+          }
+        }
     }
 }
 
