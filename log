@@ -802,3 +802,14 @@ Sat 16 Mar 2024 05:48:44 PM UTC:
  tests:  0|3
 total_score: 40/70
 0f8b1e3
+Sat 16 Mar 2024 05:53:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:69:23: error: expected ‘)’ before ‘i’
+   69 |       while( j < size2 i < size1)
+      |            ~          ^~
+      |                       )
+Compilation failed
+9935b46
