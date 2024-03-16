@@ -59,7 +59,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
   (*newSize) = Pares;
   int *nuevoPares = malloc(sizeof(int) * (*newSize));
-  if (nuevosPares == NULL)
+  if (nuevoPares == NULL)
   {
     return NULL;
   }

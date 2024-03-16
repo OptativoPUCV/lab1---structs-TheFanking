@@ -893,3 +893,9 @@ exercises.c:62:7: error: ‘nuevosPares’ undeclared (first use in this functio
 exercises.c:62:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4a4764c
+Sat 16 Mar 2024 10:52:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+99b94fd
