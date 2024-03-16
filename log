@@ -583,3 +583,17 @@ Sat 16 Mar 2024 03:38:14 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 7143603
+Sat 16 Mar 2024 03:45:12 PM UTC: 
+ exercises.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:77:11: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+   77 |           else
+      |           ^~~~
+exercises.c:79:13: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+   79 |             contador++;
+      |             ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e807709
