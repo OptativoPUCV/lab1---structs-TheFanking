@@ -73,14 +73,12 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
           {
             result[contador] = arr1[i];
             contador+=1;
-            break;
           }
           else
           {
             result[contador] = arr2[j];
             j+=1;
             contador+=1;
-            break;
           }  
         }
     }
