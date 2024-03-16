@@ -80,7 +80,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
             j+=1;
             contador+=1;
           }
-          result[contador] = arr2[j];
+          result[contador] = arr1[i];
         }
     }
 }
