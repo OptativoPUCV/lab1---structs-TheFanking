@@ -875,3 +875,21 @@ Sat 16 Mar 2024 06:54:20 PM UTC:
  tests:  0|1
 total_score: 60/70
 978ef65
+Sat 16 Mar 2024 10:46:36 PM UTC: 
+ exercises.c | 24 +++++++++++++++++++++++-
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+Sat 16 Mar 2024 10:48:18 PM UTC: 
+ exercises.c | 24 ++++++++++++++++++++++--
+ 1 file changed, 22 insertions(+), 2 deletions(-)
+Sat 16 Mar 2024 10:51:50 PM UTC: 
+ exercises.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:7: error: ‘nuevosPares’ undeclared (first use in this function); did you mean ‘nuevoPares’?
+   62 |   if (nuevosPares == NULL)
+      |       ^~~~~~~~~~~
+      |       nuevoPares
+exercises.c:62:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4a4764c
