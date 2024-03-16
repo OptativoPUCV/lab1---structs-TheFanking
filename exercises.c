@@ -52,7 +52,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   int Pares = 0 ;
   for (int i = 0 ;  i < size ; i++)
     {
-      if (arr[i] % 2 == 0 && arr[i] != 0)
+      if (arr[i] % 2 == 0)
       {
         Pares++;
       }
@@ -67,7 +67,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   int j = 0;
   while (i < size && j < (*newSize))
     {
-      if (arr[i] % 2 == 0 && arr[i] != 0)
+      if (arr[i] % 2 == 0)
       {
         nuevoPares[j] = arr[i];
         j++;
