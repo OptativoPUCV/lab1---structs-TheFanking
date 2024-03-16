@@ -96,7 +96,7 @@ int checkSorted(int arr[], int size)
   }
   else if (ascendente == 1)
   {
-    return -1;
+    return 1;
   }
   else
   {
