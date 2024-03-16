@@ -196,7 +196,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
 {
   Nodo *cabeza = NULL;
   Nodo *temporal = NULL;
-  Nodo *actual = NULL;
+  Nodo *ahora = NULL;
 
   for (int i = 0 ; i < size ; i++)
     {
@@ -204,10 +204,9 @@ Nodo *crearListaEnlazada(int arr[], int size)
        temporal->numero = arr[i];
        temporal->siguiente = NULL;
        if (cabeza == NULL ) cabeza = temporal;
-       else actual->siguiente = temporal;
-       actual = temporal;
+       else ahora->siguiente = temporal;
+       ahora = temporal;
     }
   
   return cabeza; 
-
 }
