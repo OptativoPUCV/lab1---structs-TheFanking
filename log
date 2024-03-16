@@ -493,3 +493,14 @@ Sat 16 Mar 2024 01:48:00 AM UTC:
  tests:  0|3
 total_score: 40/70
 77e8a3f
+Sat 16 Mar 2024 03:24:23 PM UTC: 
+ exercises.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:1: error: control reaches end of non-void function [-Werror=return-type]
+   55 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9c47c5b
