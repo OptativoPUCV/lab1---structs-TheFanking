@@ -504,3 +504,14 @@ exercises.c:55:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9c47c5b
+Sat 16 Mar 2024 03:25:04 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   53 |   return 1;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+5b12911
