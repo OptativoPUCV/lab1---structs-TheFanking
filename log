@@ -307,3 +307,14 @@ Sat 16 Mar 2024 12:03:08 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 edc7e0a
+Sat 16 Mar 2024 12:12:48 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:57:23: error: ‘arr2’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   57 |         int (*arr2) = realloc(arr2,sizeof(int) * (*newSize));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f6b4ffb
