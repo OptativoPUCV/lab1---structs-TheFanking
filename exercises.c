@@ -66,7 +66,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   int j = 0;
   for(int i = 0; i < size1; i++)
     {
-      for (j = 0; j < size2; j++)
+      while( j < size2 || i < size1)
         {
           if (arr1[i] < arr2[j])
           {
@@ -77,11 +77,13 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
           else
           {
             result[contador] = arr2[j];
+            j+=1;
             contador+=1;
           }
         }
     }
 }
+
 
 /*
 Ejercicio 5: Comprobación de Ordenación
