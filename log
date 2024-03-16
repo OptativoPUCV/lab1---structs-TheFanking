@@ -1071,3 +1071,14 @@ exercises.c:94:21: error: suggest parentheses around ‘&&’ within ‘||’ [-
 cc1: all warnings being treated as errors
 Compilation failed
 1a54dff
+Sat 16 Mar 2024 11:59:03 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:21: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+   94 |       if (i < size1 && (j >= size2) || arr1[i] < arr2[j])
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+746c0d6
