@@ -90,11 +90,15 @@ int checkSorted(int arr[], int size)
   {
     return 1;
   }
-  else if(descendente == 0 && ascendente == 1)
+  else if(descendente == 1)
   {
     return -1;  
   }
-  else if (ascendente == 0 && descendente == 0)
+  else if (ascendente == 1)
+  {
+    return -1;
+  }
+  else
   {
     return 0;
   }
