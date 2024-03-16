@@ -1043,3 +1043,20 @@ exercises.c:89:7: error: unused variable ‘contador’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 c3617ed
+Sat 16 Mar 2024 11:55:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:21: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+   94 |       if (i < size1 && (j >= size2) || arr1[i] < arr2[j]))
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:94:58: error: expected statement before ‘)’ token
+   94 |       if (i < size1 && (j >= size2) || arr1[i] < arr2[j]))
+      |                                                          ^
+exercises.c:99:7: error: ‘else’ without a previous ‘if’
+   99 |       else
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+baa6077
