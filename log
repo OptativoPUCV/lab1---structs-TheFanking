@@ -1023,3 +1023,23 @@ Sat 16 Mar 2024 11:49:24 PM UTC:
  1 file changed, 8 deletions(-)
  tests:  0|0
 391584e
+Sat 16 Mar 2024 11:55:01 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:57: error: expected ‘)’ before ‘{’ token
+   94 |       if (i < size1 && (j >= size2 || arr1[i] < arr2[j])
+      |          ~                                              ^
+      |                                                         )
+   95 |       {
+      |       ~                                                  
+exercises.c:105:5: error: expected expression before ‘}’ token
+  105 |     }
+      |     ^
+exercises.c:89:7: error: unused variable ‘contador’ [-Werror=unused-variable]
+   89 |   int contador = 0;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c3617ed
