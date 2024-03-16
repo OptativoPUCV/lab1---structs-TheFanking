@@ -64,7 +64,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
 {
   int newSize = size1 + size2;
   int contador = 0;
-  result = malloc(newSize * sizeof(int));
+  result = realloc(newSize * sizeof(int));
   
   for (int i = 0 ; i < size1 ; i++)
   {
