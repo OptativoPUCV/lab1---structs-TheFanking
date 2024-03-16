@@ -54,7 +54,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     {
       if (arr[i] % 2 == 0 && arr[i] != 0)
       {
-        if (arr[i] == 0) break;
         arr2 = realloc(arr2,sizeof(int) * (((*newSize) + 1)));
         if (arr2 == NULL)
         {
@@ -110,8 +109,32 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) 
-{ 
-  return -2; 
+{
+  int ascendente = 1;
+  int descendente = 1;
+  for (int i = 0 ; i < size - 1 ; i++)
+    {
+      if (arr[i] > arr[i + 1])
+      {
+        ascendente = 0;
+      }
+      else if (arr[i] < arr[i+1])
+      {
+        descendente = 0;
+      }
+    }
+  if (descendente == 1 && ascendente == 1)
+  {
+    return 1;
+  }
+  else if(descendente == 0 && ascendente == 1)
+  {
+    return -1;  
+  }
+  else
+  {
+    return 0;
+  }
 }
 
 /*
