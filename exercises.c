@@ -208,9 +208,15 @@ Nodo *crearListaEnlazada(int arr[], int size)
        temporal = (Nodo *) malloc(sizeof(Nodo)); 
        temporal->numero = arr[i];
        temporal->siguiente = NULL;
-       if (cabeza == NULL ) cabeza = temporal;
-       else ahora->siguiente = temporal;
-       ahora = temporal;
+       if (cabeza == NULL ) 
+       {
+         cabeza = temporal;
+       }   
+       else
+       { 
+         ahora->siguiente = temporal;
+        ahora = temporal;
+       }  
     }
   
   return cabeza; 
