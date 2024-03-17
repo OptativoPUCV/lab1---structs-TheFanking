@@ -214,9 +214,9 @@ Nodo *crearListaEnlazada(int arr[], int size)
        }   
        else
        { 
-         ahora->siguiente = temporal;
-        ahora = temporal;
+          ahora->siguiente = temporal;
        }  
+      ahora = temporal;
     }
   
   return cabeza; 
