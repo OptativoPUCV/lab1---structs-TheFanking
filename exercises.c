@@ -96,7 +96,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
         result[contador] = arr1[i];
         if (i == size1)
         {
-          result[contador] = arr1[size1 - 1];
+          result[contador - 1] = arr1[size1 - 1];
         }
         i++;
       }
